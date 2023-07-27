@@ -73,6 +73,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
+                <!-- lg view  -->
 
                 <div class="flex-1 ">
                     <img class="lg:hidden md:hidden" src="images/logo.png" alt="">
@@ -84,12 +85,15 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
+
+                        <!-- without lg view  -->
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-base bg-base-100 rounded-box w-72 text-black">
                             <li><a>Home</a></li>
                             <li><a>Shop</a></li>
                             <li><a>News</a></li>
                             <li><a>Contact</a></li>
+                            <!-- search hide / view  -->
                             <div class="relative flex ">
 
                                 <input type="text" placeholder="Search here"
@@ -194,18 +198,17 @@
                 </div>
             </div>
         </div>
+
         <!-- 5 fruit section  -->
         <div
-            class="relative container mx-auto justify-center items-center z-1 bg-white w-3/4 hidden lg:block -mt-20 shadow-md border rounded-md">
-
+            class="relative container mx-auto justify-center items-center z-1 bg-white w-3/4 
+                    hidden lg:block -mt-20 shadow-md border rounded-md">
 
             <div class="grid gap-0 grid-cols-1 md:grid-cols-5 lg:grid-cols-5 justify-items-center p-5">
 
                 <div class="card text-center justify-center text-gray-700 p-2">
                     <figure><img src="images/fruit1.png" alt="Shoes" /></figure>
-                    <div>
-                        <p>Angur</p>
-                    </div>
+                    <p>Angur</p>
                 </div>
 
                 <div class="card text-center justify-center text-gray-700 p-2">
@@ -262,6 +265,7 @@
                 </div>
             </div>
 
+            <!-- 2nd part deal of the day -->
 
             <div
                 class="grid gap-5 grid-cols-1 md:grid-cols-4 lg:grid-cols-4 justify-items-center p-5 lg:p-20 bg-base-200">
@@ -280,7 +284,8 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions justify-start">
-                            <button onclick="details_modal_1.showModal()" class="text-orange-700 hover:cursor-pointer">Details</button>
+                            <button onclick="details_modal_1.showModal()"
+                                class="text-orange-700 hover:cursor-pointer">Details</button>
                         </div>
                     </div>
                 </div>
@@ -299,7 +304,8 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions justify-start">
-                            <button onclick="details_modal_2.showModal()" class="text-orange-700 hover:cursor-pointer">Details</button>
+                            <button onclick="details_modal_2.showModal()"
+                                class="text-orange-700 hover:cursor-pointer">Details</button>
                         </div>
                     </div>
                 </div>
@@ -318,7 +324,8 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions justify-start">
-                            <button onclick="details_modal_3.showModal()" class="text-orange-700 hover:cursor-pointer">Details</button>
+                            <button onclick="details_modal_3.showModal()"
+                                class="text-orange-700 hover:cursor-pointer">Details</button>
                         </div>
                     </div>
                 </div>
@@ -337,17 +344,21 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions justify-start">
-                            <button onclick="details_modal_4.showModal()" class="text-orange-700 hover:cursor-pointer">Details</button>
+                            <button onclick="details_modal_4.showModal()"
+                                class="text-orange-700 hover:cursor-pointer">Details</button>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div class="text-center bg-base-200 pb-5">
-                <button onclick="details_modal_showall.showModal()" class="items-center bg-gradient-to-r from-orange-400 to-red-500 text-white p-3 rounded-md">Shop
+                <button onclick="details_modal_showall.showModal()"
+                    class="items-center bg-gradient-to-r from-orange-400 to-red-500 text-white p-3 rounded-md">Shop
                     All</button>
+                    <!-- Out of stock modal  -->
             </div>
         </section>
+        <!-- Modal Area End  -->
 
         <!-- meet the team  -->
         <section class="container mx-auto justify-center mt-10 bg-image bg-no-repeat bg-center bg-cover">
@@ -381,7 +392,7 @@
                 </div>
 
 
-                <!-- 2nd man's wife  -->
+                <!-- 1st man's wife  -->
                 <div class="card p-2">
                     <figure><img src="images/member2.png" alt="Shoes" /></figure>
                     <div class="card-body items-center text-center">
@@ -447,30 +458,34 @@
             bg-base-200">
 
                 <!-- 1st part  -->
-                <div class=" ">
+                <div class="">
+
                     <div class="hero-content flex-col lg:flex-row">
                         <i class="fa-solid fa-people-group "></i>
-                        <div>
-                            <h1 class="font-bold border-b-2 border-gray-400 mr-48">Dedicated Team</h1>
+                        <div class="text-center lg:text-left">
+                            <h1 class="font-bold border-b-2 border-gray-400 lg:mr-48">Dedicated Team</h1>
                             <p class="">Professional employees are there for you to pick the most amazing and fresh
                                 fruits.</p>
                         </div>
                     </div>
+
                     <div class="hero-content flex-col lg:flex-row">
                         <i class="fa-solid fa-heart-circle-plus"></i>
-                        <div>
-                            <h1 class="font-bold border-b-2 border-gray-400 mr-48">Fresh is Best</h1>
+                        <div class="text-center lg:text-left">
+                            <h1 class="font-bold border-b-2 border-gray-400 lg:mr-48">Fresh is Best</h1>
                             <p class="">Professional employees are there for you to pick the most amazing and fresh
                                 fruits.</p>
                         </div>
                     </div>
+
                     <div class="hero-content flex-col lg:flex-row">
                         <i class="fa-solid fa-gift"></i>
-                        <div>
-                            <h1 class="font-bold border-b-2 border-gray-400 mr-48">Gift Certificates</h1>
+                        <div class="text-center lg:text-left">
+                            <h1 class="font-bold border-b-2 border-gray-400 lg:mr-48">Gift Certificates</h1>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
+
                 </div>
 
 
@@ -481,38 +496,32 @@
 
 
                 <!-- 3rd part  -->
-                <div class="text-right lg:text-right">
-                    <!-- 1st icon visible on mobile and tablet, hidden on laptop and larger -->
+                <div class="text-center lg:text-right">
+                    <!-- 1st icon visible on mobile and tablet,nazmus hidden on laptop and larger-->
                     <div class="hero-content flex-col lg:flex-row">
-                        <!-- <i class="fa-solid fa-people-group block lg:hidden nazmus"></i> -->
+                        <i class="fa-solid fa-people-group hidden lg:block"></i>
                         <div>
-                            <h1 class="font-bold border-b-2 border-gray-400 ml-48">Dedicated Team</h1>
+                            <h1 class="font-bold border-b-2 border-gray-400 lg:ml-48">Integrated Supplier</h1>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
-                        <!-- 2nd icon visible on laptop and larger, hidden on mobile and tablet -->
+                    </div>
+
+                    <!-- 2nd icon visible on laptop and larger,saadat hidden on mobile and tablet -->
+                    <div class="hero-content flex-col lg:flex-row">
                         <i class="fa-solid fa-heart-circle-plus hidden lg:block"></i>
-                    </div>
-
-                    <!-- 2nd icon visible on laptop and larger, hidden on mobile and tablet -->
-                    <div class="hero-content flex-col lg:flex-row">
-                        <!-- <i class="fa-solid fa-heart-circle-plus hidden lg:hidden"></i> -->
                         <div>
-                            <h1 class="font-bold border-b-2 border-gray-400 ml-48">Fresh is Best</h1>
+                            <h1 class="font-bold border-b-2 border-gray-400 lg:ml-48">Sustainable Practice</h1>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
-                        <!-- 2nd icon visible on laptop and larger, hidden on mobile and tablet -->
-                        <i class="fa-solid fa-heart-circle-plus block lg:block"></i>
                     </div>
 
-                    <!-- 3rd icon visible on laptop and larger, hidden on mobile and tablet -->
+                    <!-- 3rd icon visible on laptop and larger,cse hidden on mobile and tablet -->
                     <div class="hero-content flex-col lg:flex-row">
-                        <!-- <i class="fa-solid fa-gift hidden lg:hidden saadat"></i> -->
+                        <i class="fa-solid fa-gift hidden lg:block"></i>
                         <div>
-                            <h1 class="font-bold border-b-2 border-gray-400 ml-48">Gift Certificates</h1>
+                            <h1 class="font-bold border-b-2 border-gray-400 lg:ml-48">The Benefits Only</h1>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
-                        <!-- 3rd icon visible on laptop and larger, hidden on mobile and tablet cse -->
-                        <i class="fa-solid fa-gift block lg:block"></i>
                     </div>
                 </div>
 
@@ -523,10 +532,10 @@
         <section>
 
             <!-- details modal 1   -->
-            <button class="btn" onclick="details_modal_1.showModal()">open modal</button>
+            <!-- set modal xyz id for xyz modal view  -->
             <dialog id="details_modal_1" class="modal modal-middle sm:modal-middle">
                 <form method="dialog" class="modal-box">
-                    
+                    <!-- content area  -->
                     <div class="card border rounded-md border-red-200 p-2">
                         <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
@@ -540,10 +549,11 @@
                                 <i class="fa-regular fa-star-half-stroke"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
-                            
+                            <!-- button part  -->
                             <div class="card-actions justify-between">
                                 <div>
-                                    <button class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
+                                    <button
+                                        class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
                                     </button>
                                 </div>
                                 <div>
@@ -551,19 +561,18 @@
                                     hover:cursor-pointer">Shop Now</div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </form>
             </dialog>
 
-            
+
 
             <!-- details modal 2   -->
-            <button class="btn" onclick="details_modal_2.showModal()">open modal</button>
             <dialog id="details_modal_2" class="modal modal-middle sm:modal-middle">
                 <form method="dialog" class="modal-box">
-                    
+
                     <div class="card border rounded-md border-red-200 p-2">
                         <figure><img src="images/fruit7.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
@@ -577,10 +586,11 @@
                                 <i class="fa-regular fa-star-half-stroke"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
-                            
+
                             <div class="card-actions justify-between">
                                 <div>
-                                    <button class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
+                                    <button
+                                        class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
                                     </button>
                                 </div>
                                 <div>
@@ -588,7 +598,7 @@
                                     hover:cursor-pointer">Shop Now</div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </form>
@@ -596,10 +606,9 @@
 
 
             <!-- details modal 3   -->
-            <button class="btn" onclick="details_modal_3.showModal()">open modal</button>
             <dialog id="details_modal_3" class="modal modal-middle sm:modal-middle">
                 <form method="dialog" class="modal-box">
-                    
+
                     <div class="card border rounded-md border-red-200 p-2">
                         <figure><img src="images/fruit8.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
@@ -613,10 +622,11 @@
                                 <i class="fa-regular fa-star-half-stroke"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
-                            
+
                             <div class="card-actions justify-between">
                                 <div>
-                                    <button class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
+                                    <button
+                                        class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
                                     </button>
                                 </div>
                                 <div>
@@ -624,7 +634,7 @@
                                     hover:cursor-pointer">Shop Now</div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </form>
@@ -632,10 +642,9 @@
 
 
             <!-- details modal 4   -->
-            <button class="btn" onclick="details_modal_1.showModal()">open modal</button>
             <dialog id="details_modal_4" class="modal modal-middle sm:modal-middle">
                 <form method="dialog" class="modal-box">
-                    
+
                     <div class="card border rounded-md border-red-200 p-2">
                         <figure><img src="images/fruit9.png" alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
@@ -649,10 +658,11 @@
                                 <i class="fa-regular fa-star-half-stroke"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
-                            
+
                             <div class="card-actions justify-between">
                                 <div>
-                                    <button class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
+                                    <button
+                                        class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
                                     </button>
                                 </div>
                                 <div>
@@ -660,7 +670,7 @@
                                     hover:cursor-pointer">Shop Now</div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </form>
@@ -668,25 +678,27 @@
 
             <!-- details modal showall secret deals -->
 
-            <button class="btn" onclick="details_modal_showall.showModal()">open modal</button>
             <dialog id="details_modal_showall" class="modal modal-middle sm:modal-middle bg-red-600">
                 <form method="dialog" class="modal-box">
-                    
+
                     <div class="card border rounded-md border-red-200 p-2">
-                        <figure><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/cover4_new_1200x768.jpeg" alt="Shoes" /></figure>
+                        <figure><img
+                                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/cover4_new_1200x768.jpeg"
+                                alt="Shoes" /></figure>
                         <div class="card-body items-center text-center">
                             <p class="mb-2 text-2xl font-bold">I'm Out of stock</p>
                             <p>You may buy later.</p>
-                            
+
                             <p>Thank You</p>
                             <div class="card-actions justify-between">
                                 <div>
-                                    <button class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
+                                    <button
+                                        class="border border-orange-700 text-orange-700 pr-3 pl-3 p-2 rounded-md">Close
                                     </button>
                                 </div>
-                                
+
                             </div>
-                            
+
                         </div>
                     </div>
                 </form>
@@ -702,6 +714,7 @@
             <img src="images/logo.png" alt="">
             <h2 class="text-3xl text-white font-bold">Fruit House</h2>
         </div>
+        <!-- 1st part  footer  -->
         <div class="text-white flex flex-wrap justify-center gap-10">
             <a class="link link-hover">Home</a>
             <a class="link link-hover">About us</a>
@@ -710,6 +723,7 @@
             <a class="link link-hover">Support</a>
             <a class="link link-hover">My Account</a>
         </div>
+        <!-- 2nd part  footer  -->
         <div class="">
             <div class="flex flex-wrap text-xl gap-5 text-white">
                 <i class="fa-brands fa-facebook "></i>
@@ -720,6 +734,7 @@
                 <i class="fa-solid fa-apple-whole"></i>
             </div>
         </div>
+        <!-- 3rd part  footer  -->
         <div class="text-white">
             <p><small>Copyright © 2023 - All right reserved by ACME Industries Ltd</small></p>
         </div>
